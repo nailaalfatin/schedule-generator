@@ -48,7 +48,11 @@ class _AllTasksScreenState extends State<AllTasksScreen> {
         ),
         title: const Text(
           "All Tasks",
-          style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+          style: TextStyle(
+            color: Colors.white, 
+            fontSize: 20, 
+            fontWeight: FontWeight.bold
+          ),
         ),
       ),
       backgroundColor: const Color(0xFF0C1117),

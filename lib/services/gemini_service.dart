@@ -92,7 +92,7 @@ class GeminiService {
 
     Tolong susun jadwal yang optimal dan efisien berdasarkan daftar tersebut.
     Tolong tentukan prioritasnya berdasarkan *deadline yang paling dekat* dan *durasi tugas*.
-    Tolong buat jadwal yang sistematis dari pagi hari, sampai malam hari.
+    Tolong buat jadwal yang sistematis dan lengkap dari pagi hari, sampai malam hari.
     Tolong pastikan semua tugas dapat selesai sebelum deadline.
     Gunakan **emoji** untuk membedakan header, tapi jangan terlalu banyak menggunakan emoji.
     Tolong buatkan output jadwal dalam format list per jam, misalnya:

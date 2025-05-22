@@ -16,7 +16,13 @@ class ResultScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF0C1117),
       appBar: AppBar(
-        title: const Text("Generated Schedule"),
+        title: const Text(
+          "Generated Schedule",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20
+          ),
+        ),
         backgroundColor: const Color(0xFF0C1117),
         foregroundColor: Colors.white,
         elevation: 0,
@@ -28,7 +34,7 @@ class ResultScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "📌 $taskTitle",
+                " 📌  $taskTitle",
                 style: const TextStyle(
                   fontSize: 22,
                   fontWeight: FontWeight.bold,
