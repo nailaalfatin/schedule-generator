@@ -94,9 +94,11 @@ class GeminiService {
     Tolong tentukan prioritasnya berdasarkan *deadline yang paling dekat* dan *durasi tugas*.
     Tolong buat jadwal yang sistematis dari pagi hari, sampai malam hari.
     Tolong pastikan semua tugas dapat selesai sebelum deadline.
-
+    Gunakan **emoji** untuk membedakan header, tapi jangan terlalu banyak menggunakan emoji.
     Tolong buatkan output jadwal dalam format list per jam, misalnya:
     - 08:00-09:00: Melaksanakan piket kamar
+
+    Dan tolong buat dengan format yang rapi dan mudah dibaca untuk gen Z (tidak usah mention ini di output nanti).
     ''';
   }
 

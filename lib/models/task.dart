@@ -1,21 +1,18 @@
-/* 
-  File yang ada di dalam folder model, biasanya disebut dengan Data Class.
-  
-  Biasanya Data Class di presentasikan dengan bundling, dengan mengimport
-  library Parcelize(Android Native)
-*/
 class Task {
   final String name;
   final int duration;
   final DateTime deadline;
+  String? scheduleResult; // untuk menyimpan hasil generate
 
-  Task({required this.name, required this.duration, required this.deadline});
+  Task({
+    required this.name,
+    required this.duration,
+    required this.deadline,
+    this.scheduleResult,
+  });
 
-  // override itu untuk membentuk suatu turunan dari sebuah object
-  // salah satu contohnya adalah adanya function didalam funciton
   @override
   String toString() {
-    return "Task{name: $name, duration: $duration, deadline: $deadline}";
+    return "Task{name: $name, duration: $duration, deadline: $deadline, scheduleResult: $scheduleResult}";
   }
-
 }

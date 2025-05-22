@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:schedule_generator/ui/home_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import 'package:schedule_generator/ui/home/home_screen.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   await initializeDateFormatting('id_ID', null);
-  runApp(ScheduleGeneratorApp());
+  await SharedPreferences.getInstance();
+  runApp(const ScheduleGeneratorApp());
 }
 
 class ScheduleGeneratorApp extends StatelessWidget {
@@ -19,9 +22,10 @@ class ScheduleGeneratorApp extends StatelessWidget {
       title: 'Schedule Generator App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        useMaterial3: true // itu biar kita make UI gaya terbaru dari Google (Material Design 3)
+        useMaterial3: true,
+        fontFamily: 'SF Pro Display',
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
