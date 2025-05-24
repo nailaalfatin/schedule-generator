@@ -1,6 +1,4 @@
 ![Mockup (1)](https://github.com/user-attachments/assets/90bb2964-e154-48ec-aec1-a49f4cf0595f)
-230)
-
 # 🗓️ Atursaja
 
 Smart Schedule Generator powered by Google Gemini
